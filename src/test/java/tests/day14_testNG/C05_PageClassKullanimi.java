@@ -20,10 +20,10 @@ public class C05_PageClassKullanimi {
         testOtomasyonuPage.aramaKutusu.sendKeys("phone"+ Keys.ENTER);
 
        // bulunan sonuc sayisinin 1'den cok oldugunu test edin
-        Assert.assertTrue(testOtomasyonuPage.bulunanUrunSonucList.size()>1);
+        Assert.assertTrue(testOtomasyonuPage.bulunanUrunElementleriList.size()>1);
 
        // arama sonuc sayisini yazdirin
-        System.out.println(testOtomasyonuPage.sonucYaziElementi.getText());
+        System.out.println(testOtomasyonuPage.bulunanUrunElementleriList.size());
 
         ReusableMethods.bekle(3);
         // sayfayi kapatin
