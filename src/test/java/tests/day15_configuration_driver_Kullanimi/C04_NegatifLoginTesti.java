@@ -37,7 +37,7 @@ public class C04_NegatifLoginTesti {
         Driver.closeDriver();
     }
 
-    @Test
+    @Test(groups = "regresion")
     public void gecersizEmailTesti(){
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
@@ -56,7 +56,7 @@ public class C04_NegatifLoginTesti {
         Driver.closeDriver();
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void gecersizEmailGecersizPasswordTesti(){
 
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin

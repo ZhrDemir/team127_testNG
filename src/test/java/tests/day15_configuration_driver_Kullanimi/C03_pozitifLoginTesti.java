@@ -9,7 +9,7 @@ import utilities.ReusableMethods;
 
 public class C03_pozitifLoginTesti {
 
-    @Test
+    @Test(groups = {"smoke","regresion"})
     public void pozitifLoginTesti(){
 
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin

@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--
+   .xml dosyaları
+   TestNG de toplu çalıştırma için kullanılır
+   1- başa yazılan satır mutlaka olmalı
+
+   2- hangi method/class/package ların çalışacağını
+   test hiyerarşisine uygun olarak .xml dosyamızda yazılmalı
+
+    3- Test Hiyerarşisi
+
+       suite : bir veya birden fazla test içerir
+       test : bir amaç için bir araya getirilen
+              test method/class/package'larından oluşan ve tek
+              seferde çalıştırılan yapıdır.
+              ORN : smoke Test, E2E Testi, regression Testi,
+
+       package  - class  - test methodları aynı seviyede
+
+
+
+-->
+<suite name="belirlenen classlari calistirma">
+
+    <test name="Login testleri">
+
+        <classes>
+            <class name="tests.day15_configuration_driver_Kullanimi.C03_pozitifLoginTesti"></class>
+            <class name="tests.day15_configuration_driver_Kullanimi.C04_NegatifLoginTesti"></class>
+            <class name="tests.day16_softAssertion_xmlFiles.C02_SoftAssertion"></class>
+
+        </classes>
+
+
+    </test>
+
+
+</suite>

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="istenen methodları çalıştırma">
+
+    <test name="methodlar">
+
+        <classes>
+            <class name="tests.day15_configuration_driver_Kullanimi.C04_NegatifLoginTesti">
+                <methods>
+                    <include name="gecersizPasswordTesti"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
